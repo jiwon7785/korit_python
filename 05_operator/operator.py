@@ -34,3 +34,21 @@ b = False
 print(a and not b) #True
 print(a or b) #True
 print(not b) #True
+
+#조건 연산자(삼항 연산자)
+a = 10
+b = 20
+
+max_value = a if a > b else b
+# -> if a > b:
+#     max_value = a
+# else:
+#     max_value = b
+
+print(max_value)
+
+#홀수 판별
+num = 7
+result = "짝수" if num % 2 == 0 else "홀수"
+print(result)
+#참일 때 반환값 if 조건 else 거짓일 때 반환값
