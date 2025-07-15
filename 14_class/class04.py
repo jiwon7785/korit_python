@@ -5,7 +5,7 @@
 #소멸자 => 소멸 시 "[제목]의 객체가 소멸되었습니다."
 
 class Book:
-    def __int__(self, title, author):
+    def __init__(self, title, author):
         self.title = title
         self.author = author
 

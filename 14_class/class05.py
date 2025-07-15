@@ -5,23 +5,28 @@
 #만약에 잔액이 부족하다면 출금을 할 수 없도록 출력
 
 class Account:
-    def __int__(self, owner, balance=0):
+    def __init__(self, owner, balance=0):
         self.owner = owner
         self.balance = balance
+        print(f"{self.owner}님의 계좌가 개설되었습니다. 잔액: {self.balance}")
 
     def deposit(self, plus):
         if plus > 0:
             self.balance += plus
-            print(f"현재 잔액은 {self.balance}원입니다.")
+            print(f"{plus}원 입금되었습니다. {self.owner}님의 현재 잔액은 {self.balance}원입니다.")
         else:
             print("입금할 금액을 양수로 다시 입력하십시오.")
 
     def withdraw(self, minus):
-        if 0 < minus <= self.balance:
+        if 0 < minus <= self.balance: #출금액이 0보다 작거나 잔액보다 많은 경우 방지
             self.balance -= minus
-            print(f"현재 잔액은 {self.balance}원입니다.")
+            print(f"{self.owner}님의 현재 잔액은 {self.balance}원입니다.")
         else:
-            print("해당 금액만큼 출금할 수 없습니다./n출금할 잔액을 양수이고 잔액보다는 작은 값으로 다시 입력하십시오.")
+            print("해당 금액만큼 출금할 수 없습니다.\n출금할 잔액을 양수이고 잔액보다는 작은 값으로 다시 입력하십시오.")
 
 account1 = Account("하지원", 10000)
-account1.withdraw(900)
+account1.deposit(20000)
+account1.deposit(-1000)
+account1.withdraw(13000)
+account1.withdraw(20000)
+account1.withdraw(-1000)

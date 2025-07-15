@@ -1,5 +1,5 @@
 class Player: #클래스명은 무조건 대문자로 시작
-    def __int__(self, nickname, hp=100, gold=0, level=1):
+    def __init__(self, nickname, hp=100, gold=0, level=1):
         #nickname은 필수값, 나머지는 기본값이 정의되어 있다. 필수값이 기본값보다는 앞에 와야함
         self.nickname = nickname
         self.hp = hp
