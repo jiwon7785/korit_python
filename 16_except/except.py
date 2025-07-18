@@ -170,8 +170,8 @@ account1.withdraw(5000)
 dict1 = {1 : "가", 2 : "나", 3: "다"}
 
 try:
-    a = int(input("딕셔너리 키를 입력하시오: "))
-    result = dict1[a]
+    a = int(input("딕셔너리에서 찾을 키(숫자)를 입력하시오: ")) #ValueError가 발생할 수 있는 코드
+    result = dict1[a] #KeyError가 발생할 수 있는 코드
 except KeyError:
     print("해당 키는 존재하지 않습니다.")
 except ValueError:
