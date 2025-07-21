@@ -1,15 +1,15 @@
 {
-    "nickname": "하지원",
+    "nickname": "모험가",
     "level": 1,
     "gold": 0,
     "attack": 10,
     "exp": 0,
     "max_exp": 100,
-    "hp": 100,
+    "hp": -20,
     "max_hp": 100,
-    "mp": 50,
+    "mp": 4,
     "max_mp": 50,
-    "cri_luck": 0,
+    "cri_luk": 0,
     "skills": [
         {
             "name": "달팽이 세마리",
