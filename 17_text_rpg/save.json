@@ -5,9 +5,9 @@
     "attack": 10,
     "exp": 0,
     "max_exp": 100,
-    "hp": -20,
+    "hp": 100,
     "max_hp": 100,
-    "mp": 4,
+    "mp": 50,
     "max_mp": 50,
     "cri_luk": 0,
     "skills": [

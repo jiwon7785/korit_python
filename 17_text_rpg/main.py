@@ -2,7 +2,7 @@ import os
 from package.models import Player
 from package.utils import save_game, load_game
 from package.constants import monsters
-from package.game import battle
+from package.game import battle, shop
 
 def main():
     print("턴제 RPG 게임")
@@ -42,6 +42,7 @@ def main():
                 print("잘못된 입력입니다.")
         elif choice == "2":
             print("\n[상점]")
+            shop(player)
         elif choice == "3":
             print("\n[내 아이템 확인]")
         elif choice == "4":
